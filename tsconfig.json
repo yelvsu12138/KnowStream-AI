@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "verbatimModuleSyntax": false,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
